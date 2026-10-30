@@ -70,8 +70,8 @@ function createHouse(x, y, z){
   base.setAttribute("height", "2");
   base.setAttribute("width", "2.3");
   base.setAttribute("depth","2");
-  base.setAttribute("color", "yellow")
-  base.setAttribute("position", "0 1.5 0")
+  base.setAttribute("color", "yellow");
+  base.setAttribute("position", "0 1.5 0");
   house.append(base);
 
   let roof=document.createElement("a-cylinder");
