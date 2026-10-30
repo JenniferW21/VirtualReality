@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded",function() {
 function createCloud(x, y, z){
   let clouds = document.createElement("a-entity");
   let cloud = document.createElement("a-sphere");
-  cloud.setAttribute("position:, "0 0.1 0");
+  cloud.setAttribute("position", "0 0.1 0");
   clouds.append(cloud);
 
   let cloud1 = document.createElement("a-sphere");
