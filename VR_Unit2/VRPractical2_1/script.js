@@ -76,11 +76,11 @@ function createHouse(x, y, z){
   house.append(base);
 
   let roof=document.createElement("a-cylinder");
-  roof.setAttribute("segments-radial", 3)；
-  roof.setAttribute("rotation", "-90, 0, 0");
+  roof.setAttribute("segments-radial", 3);
   roof.setAttribute("height", 2.2);
   roof.setAttribute("radius", 1.6);
   roof.setAttribute("position", "0, 3, 0");
+  roof.setAttribute("rotation", "-90, 0, 0");
   roof.setAttribute("color", "red");
   house.append(roof);
 
