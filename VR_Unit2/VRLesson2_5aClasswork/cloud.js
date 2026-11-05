@@ -1,10 +1,10 @@
 class Cloud{
   constructor(x,y,z){
     // Challenge 1: Create animation variables  x and dx for the Cloud to fly.  Set them to appropriate values.
-    this.x=0;
-    this.dx=0.4;
     this.obj = document.createElement("a-entity");
     let shapes = ["a-dodecahedron","a-icosahedron","a-octahedron","a-tetrahedron"];
+    this.x=x;
+    this.dx=0.04;
 
     for(let i = -1; i <= 1; i++){
       let r = rnd(0,shapes.length);
@@ -18,6 +18,6 @@ class Cloud{
   //Challenge 2: Create a function fly() which increases x by dx and updates the Cloud object to that x position
   fly(){
     this.x += this.dx;
-    this.obj.setAttribute("position",{x:this.x,y:0, z:0});
+    this.obj.setAttribute("position",{x:this.x,y:6, z:0});
   }
 }
