@@ -31,6 +31,7 @@ function loop(){
   for(let ufo of ufos){
     ufo.invade();
     ufo.spin();
+
   }
   window.requestAnimationFrame( loop );
 }
