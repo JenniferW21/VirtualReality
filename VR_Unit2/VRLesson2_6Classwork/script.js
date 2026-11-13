@@ -1,9 +1,9 @@
-let scene;
-let mechTemplate;
-let army=[];
+let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
+let scene, mechTemplate,army=[];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
+  mechTemplate = document.getElementById("mech-1");
   
   for(let x = -10; x < 10; x += 10){
     for(let z = -10; z < 10; z += 10){
@@ -11,13 +11,13 @@ window.addEventListener("DOMContentLoaded",function() {
       army.push(m);
     }
   }
-  mechTemplate = document.getElementById("mech-1");
+  
   
   loop();
 })
 function loop(){
-  for(let mech of army){
-    mech.launch();
+  for(let m of army){
+    m.launch();
   }
 
   window.requestAnimationFrame( loop );

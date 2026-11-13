@@ -3,7 +3,7 @@ class Mech{
         this.x = x;
         this.y = y;
         this.z = z;
-        this.dy = 0.08;
+        this.dy = rnd(1,10)/50
         this.obj = mechTemplate.cloneNode(true);
         this.obj.setAttribute("position", {x:x,y:y,z:z})
         scene.append(this.obj);
