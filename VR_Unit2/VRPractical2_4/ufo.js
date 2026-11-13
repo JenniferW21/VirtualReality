@@ -32,6 +32,45 @@ class UFO{
     base.setAttribute("position","0 -1 0");
     this.obj.append(base);
 
+    let particle = document.createElement("a-sphere");
+    particle.setAttribute("radius",0.2);
+    particle.setAttribute("opacity",0.6);
+    particle.setAttribute("height",8)
+    particle.setAttribute("color","#2ec763");
+    particle.setAttribute("position",{x:-4, y:-5, z:0});
+    this.obj.append(particle);
+
+    let p2 = document.createElement("a-sphere");
+    p2.setAttribute("radius",0.2);
+    p2.setAttribute("opacity",0.8);
+    p2.setAttribute("height",8)
+    p2.setAttribute("color","#2ec763");
+    p2.setAttribute("position",{x:3, y:-3, z:0});
+    this.obj.append(p2);
+
+    let p3 = document.createElement("a-sphere");
+    p3.setAttribute("radius",0.1);
+    p3.setAttribute("opacity",0.5);
+    p3.setAttribute("height",8)
+    p3.setAttribute("color","#4b805e");
+    p3.setAttribute("position",{x:2.5, y:-5.5, z:1});
+    this.obj.append(p3);
+
+    let p4 = document.createElement("a-sphere");
+    p4.setAttribute("radius",0.15);
+    p4.setAttribute("opacity",0.9);
+    p4.setAttribute("height",8)
+    p4.setAttribute("color","#a1cfb2");
+    p4.setAttribute("position",{x:2, y:-3.5, z:-1});
+    this.obj.append(p4);
+
+    let p5 = document.createElement("a-sphere");
+    p5.setAttribute("radius",0.08);
+    p5.setAttribute("opacity",0.7);
+    p5.setAttribute("height",8)
+    p5.setAttribute("color","#38975b");
+    p5.setAttribute("position",{x:-3, y:-3, z:-1});
+    this.obj.append(p5);
 
     let light = document.createElement("a-cone");
     light.setAttribute("radius-top",1);
