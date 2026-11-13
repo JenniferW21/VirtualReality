@@ -7,7 +7,7 @@ class UFO{
     this.da = 1;
 
     for(let i = 0; i < 2; i++)
-    this.dy = 0.08;
+    this.dy = 0.1;
     this.obj = document.createElement("a-entity");
 
     let head = document.createElement("a-sphere");
@@ -45,6 +45,7 @@ class UFO{
 
     this.obj.setAttribute("position",{x:x, y:7, z:z});
     scene.append(this.obj);
+
   }
 
   invade(){
