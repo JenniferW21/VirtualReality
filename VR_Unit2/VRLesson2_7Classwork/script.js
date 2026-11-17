@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene, dudeTemplate, dudes[];
+let scene, dudeTemplate, dudes=[];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
@@ -8,8 +8,10 @@ window.addEventListener("DOMContentLoaded",function() {
   //Challenge 4: Create an array of dudes at random locations.
   for(let x = -10; x < 10; x += 10){
     for(let z = -10; z < 10; z += 10){
-      let d = new Dude(x,10,z);
-      dudes.push(d);
+      for(let y = -10; y < 10; y += 10){
+        let d = new Dude(x,y,z);
+        dudes.push(d);
+      }
     }
   }
   loop();  
