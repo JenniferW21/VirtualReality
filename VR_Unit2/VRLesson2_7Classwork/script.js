@@ -6,13 +6,9 @@ window.addEventListener("DOMContentLoaded",function() {
   dudeTemplate = document.querySelector("#dudeTemplate");
 
   //Challenge 4: Create an array of dudes at random locations.
-  for(let x = -10; x < 10; x += 10){
-    for(let z = -10; z < 10; z += 10){
-      for(let y = -10; y < 10; y += 10){
-        let d = new Dude(x,y,z);
-        dudes.push(d);
-      }
-    }
+  for(i=0;i<100;i++){
+    let d = new Dude(rnd(-20,20), 1, rnd(-20,20));
+    dudes.push(d);
   }
   loop();  
 })
@@ -22,4 +18,4 @@ function loop(){
     d.jump();
   }
   window.requestAnimationFrame( loop );
-}
+}    
