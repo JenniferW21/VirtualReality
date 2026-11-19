@@ -9,10 +9,10 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 
 function loop(){
-  if(target.a > -90 || target.a == 0){
-  target.a += target.da;
+  if(target.a > -90 || target.a < 90){
+    target.a += target.da;
   }
-  target.setAttribute("rotation",{x:target.a, y:0, z: 0});
+  target.setAttribute("rotation",{x:target.a, y:3, z: 0});
 
   window.requestAnimationFrame( loop );
 }
