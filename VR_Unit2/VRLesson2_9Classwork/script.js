@@ -9,7 +9,7 @@ let maze = [
   "x-xx-x-x-xxxxxxxxxxxxx",
   "x-x--x-x-x-----------x",
   "x-xxxx-xxx-xxxxxxxxx-x",
-  "x----------x-------x-x",
+  "x-----------------Tx-x",
   "xxxxxxxxxxxxxxxxxxxx-x",
 ];
 let scene;
