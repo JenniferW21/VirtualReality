@@ -11,18 +11,21 @@
 */
 
 let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxx",
+  "xTx------x-x-x----x-----x--------x-x-x",
+  "x-x-xxxxxx-x-x----xxxxx-xxxxxxx-xx-x-x",
+  "x-xxxTTTTx-x-x----x----------x---x-x-x",
+  "x--------x-x-x----xxxxx-xxxx-x-xxx-x-x",
+  "x-xxxxxxxx---x----x-x-x-x----x-x-x-x-x",
+  "x-x------x-xxxxxx-x-x-x-xxxxxx-x-x-x-x",
+  "xxx-xxxx-x------x-x----------------x-x",
+  "x--------xxxxxxxx-x-----xxxxxxxxxx-x-x",
+  "x-x-xxx-----------x-xxx-x----------x-x",
+  "x-x-x-x-xxxxxxxxx-x-x-x-x-xx-xxxxxxx-x",
+  "x-x-x-x-x---------x---x-x-xx-x-------x",
+  "x-x---x-x-xxxxxxx-xxxxx-x-xx-xxxxxxx-x",
+  "x-x---x-x----x-----------------------x",
+  "xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 ];
 
 /* Challenge 2
@@ -34,13 +37,29 @@ let scene;
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   for(let r = 0; r < maze.length; r++){
-    /* Challenge 3
+     /* Challenge 3
       Choose a technique to traverse the each character in the string.
     */ 
     /* Challenge 4
        Make an appropriate decision based on the characters you chose to enter 
        in the maze.  Create an instance of the corresponding object.
     */
+    let row = maze[r];
+    let cols = row.split("");
+    for(let c = 0; c < cols.length; c++){
+      if(cols[c] == "x"){
+        new Block(c,1,r)
+      }
+      else if(cols[c] == "T"){
+        new Tree(c,1,r);
+      }
+      else if(cols[c]=="c"){
+        new Coin(c,1,r)
+      }
+    }
+
   }
+  
 
 })
+
