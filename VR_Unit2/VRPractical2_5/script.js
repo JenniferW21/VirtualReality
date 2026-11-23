@@ -21,10 +21,12 @@ let maze = [
   "xxx-xxxx-x------x-x----------------x-x",
   "x--------xxxxxxxx-x-----xxxxxxxxxx-x-x",
   "x-x-xxx-----------x-xxx-x----------x-x",
-  "x-x-x-x-xxxxxxxxx-x-x-x-x-xx-xxxxxxx-x",
-  "x-x-x-x-x---------x---x-x-xx-x-------x",
-  "x-x---x-x-xxxxxxx-xxxxx-x-xx-xxxxxxx-x",
-  "x-x---x-x----x-----------------------x",
+  "x-x-x-x-xxxxxxxxx-x-x-x-x-x--xxxxxxx-x",
+  "x-x-x-x-x---------x---x-x-x--x-------x",
+  "x-x---x-x-xxxxxxx-xxxxx-x-x--xxxxxxx-x",
+  "x-x---x-x----x----x---x-x-x----------x",
+  "x-x---x-xxxxxxxxx-xxx-x-x-xxxxxxxxxx-x",
+  "x-x---x------------------------------x",
   "xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 ];
 
