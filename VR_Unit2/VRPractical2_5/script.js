@@ -14,7 +14,7 @@ let maze = [
   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxx",
   "xTx------x-x-xccccx-----xccc-----x-xcx",
   "x-x-xxxxxx-x-xccccxxxxx-xxxxxxx-xx-xcx",
-  "x-xxxTTTTx-x-xccccx----------T---x---x",
+  "x-x-xTTTTx-x-xccccx----------T---x---x",
   "x--------x-x-xccccxxxxx-xxxx-T-xxx-x-x",
   "x-xxxxxxxx---xccccx-x-x-x----T-x-x-x-x",
   "x-x------x-xxxxxx-x-x-x-xxxxxx-x-x-x-x",
